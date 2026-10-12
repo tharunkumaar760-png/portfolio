@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dharun D | Aspiring Machine Learning Engineer</title>
+<meta name="description" content="Portfolio of Dharun D, a second-year Information Technology student aspiring to become a Machine Learning Engineer.">
+<meta name="theme-color" content="#08060d">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<a class="skip" href="#main">Skip to content</a>
+
+<header class="nav" id="nav">
+  <div class="wrap nav-in">
+    <a href="#home" class="logo" aria-label="Dharun D, home">Dharun<span>.</span></a>
+    <button class="burger" id="burger" aria-label="Open menu" aria-expanded="false" aria-controls="menu"><span></span><span></span><span></span></button>
+    <nav aria-label="Main">
+      <ul class="menu" id="menu">
+        <li><a href="#home" class="nl">Home</a></li>
+        <li><a href="#about" class="nl">About</a></li>
+        <li><a href="#skills" class="nl">Skills</a></li>
+        <li><a href="#projects" class="nl">Projects</a></li>
+        <li><a href="#certificates" class="nl">Certificates</a></li>
+        <li><a href="#contact" class="nl">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="main">
+<section id="home" class="hero">
+  <div class="wrap hero-in">
+    <div class="hero-text">
+      <p class="hello">Hello, I'm</p>
+      <h1>Dharun D</h1>
+      <p class="role">Aspiring Machine Learning Engineer</p>
+      <p class="lead">Second-year IT student interested in machine learning, web development and problem-solving. I'm learning to build practical, intelligent software.</p>
+      <div class="btns">
+        <a href="#projects" class="btn primary">Explore My Work</a>
+        <a href="#contact" class="btn ghost">Contact Me</a>
+      </div>
+      <div class="socials" id="heroSocials"></div>
+    </div>
+    <div class="hero-photo">
+      <div class="avatar">
+        <img src="assets/profile.jpg" alt="Portrait of Dharun D" id="profileImg">
+        <div class="avatar-fb" id="profileFb" hidden>DD</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="section">
+  <div class="wrap">
+    <h2 class="reveal">About Me</h2>
+    <div class="about-grid">
+      <div class="reveal">
+        <p>I'm Dharun D, a second-year Information Technology student with a strong interest in machine learning, programming and problem-solving. I'm continuously developing my technical skills and want to build intelligent, practical software solutions.</p>
+        <p>Beyond machine learning, I enjoy web development and am exploring artificial intelligence. My goal is to become a Machine Learning Engineer, and I'm looking for opportunities to learn, build and grow towards it.</p>
+      </div>
+      <dl class="facts reveal">
+        <div><dt>College</dt><dd>Dr. Mahalingam College of Engineering and Technology</dd></div>
+        <div><dt>Department</dt><dd>Information Technology (IT)</dd></div>
+        <div><dt>Current year</dt><dd>2nd Year</dd></div>
+        <div><dt>Areas of interest</dt><dd><ul class="tags"><li>Machine Learning</li><li>Web Development</li><li>Artificial Intelligence</li></ul></dd></div>
+        <div><dt>Career goal</dt><dd>Machine Learning Engineer</dd></div>
+      </dl>
+    </div>
+  </div>
+</section>
+
+<section id="skills" class="section alt">
+  <div class="wrap">
+    <h2 class="reveal">Technical Skills</h2>
+    <div class="cards3">
+      <article class="card reveal"><span class="ico" aria-hidden="true">{ }</span><h3>Programming Languages</h3>
+        <ul class="tags"><li>Python</li><li>Java</li><li>C</li></ul></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">&lt;/&gt;</span><h3>Web Development</h3>
+        <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul></article>
+      <article class="card reveal"><span class="ico" aria-hidden="true">&#9733;</span><h3>Professional Skills</h3>
+        <ul class="tags"><li>Problem Solving</li><li>Communication</li></ul></article>
+    </div>
+  </div>
+</section>
+
+<section id="projects" class="section">
+  <div class="wrap">
+    <h2 class="reveal">Projects</h2>
+    <div class="cards3" id="projectGrid"></div>
+  </div>
+</section>
+
+<section id="certificates" class="section alt">
+  <div class="wrap">
+    <h2 class="reveal">Certificates and Hackathons</h2>
+    <div class="cards2" id="certGrid"></div>
+  </div>
+</section>
+
+<section id="contact" class="section">
+  <div class="wrap">
+    <h2 class="reveal">Contact</h2>
+    <div class="contact-grid">
+      <div class="reveal">
+        <p>I'd be glad to hear about internships, projects or learning opportunities.</p>
+        <ul class="clist">
+          <li><span>Email</span><a href="mailto:dharund9597@gmail.com">dharund9597@gmail.com</a></li>
+          <li><span>Phone</span><a href="tel:9597626973">9597626973</a></li>
+          <li><span>LinkedIn</span><a href="https://www.linkedin.com/in/dharun-d-316416383/" target="_blank" rel="noopener noreferrer">linkedin.com/in/dharun-d-316416383</a></li>
+        </ul>
+      </div>
+      <form id="contactForm" class="form reveal" novalidate>
+        <div class="field"><label for="cName">Name</label><input id="cName" name="name" type="text" autocomplete="name" required><small class="err" id="eName"></small></div>
+        <div class="field"><label for="cEmail">Email</label><input id="cEmail" name="email" type="email" autocomplete="email" required><small class="err" id="eEmail"></small></div>
+        <div class="field"><label for="cSubject">Subject</label><input id="cSubject" name="subject" type="text" required><small class="err" id="eSubject"></small></div>
+        <div class="field"><label for="cMessage">Message</label><textarea id="cMessage" name="message" rows="5" required></textarea><small class="err" id="eMessage"></small></div>
+        <button type="submit" class="btn primary">Check Message</button>
+        <p class="notice" id="formNotice" role="status">This form does not send messages because the site has no backend. A backend or email service is required to deliver them. To reach me, use the email button below after checking your message.</p>
+        <a href="mailto:dharund9597@gmail.com" class="btn ghost" id="mailAlt">Send by Email Instead</a>
+      </form>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap foot-in">
+    <div><strong>Dharun D</strong><p>Aspiring Machine Learning Engineer</p></div>
+    <div class="socials" id="footerSocials"></div>
+    <p class="copy">&copy; <span id="year">2026</span> Dharun D</p>
+    <button class="top" id="toTop" aria-label="Back to top">&uarr; Top</button>
+  </div>
+</footer>
+
+<div class="modal" id="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" hidden>
+  <div class="modal-box">
+    <button class="modal-x" id="modalClose" aria-label="Close dialog">&times;</button>
+    <h3 id="modalTitle"></h3>
+    <div id="modalBody"></div>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
